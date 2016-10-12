@@ -1,0 +1,14 @@
+#include "stdio.h"
+
+
+int main()
+{
+	int number;
+	char date[10];
+	float price;	
+		printf("Item No.\tUnit Price\tPurchase Date\n");
+	while (scanf("%d %f %s",&number,&price,&date) != EOF) {
+		printf("%-8d\t$%9.2f\t%s\n", number, price, date);
+	}
+    return 0;
+}

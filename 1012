@@ -1,0 +1,12 @@
+#include "stdio.h"
+
+
+int main()
+{
+	int input;
+	while (scanf("%d", &input) != EOF) {
+		printf("%.5o",input);
+		printf("\n");
+	}
+    return 0;
+}

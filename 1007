@@ -1,0 +1,30 @@
+#include "stdio.h"
+#include <string.h>
+
+
+int main()
+{
+	double input;
+	int m, n, a, b;
+	char chr;
+	char str[9999];
+	while (scanf("%lf %d %d", &input, &m, &n) != EOF) {
+		getchar();
+		chr = getchar();
+		for (int i = 0; i < n; i++) {
+			input = input * 10;
+		}
+		input = (long)input;
+		for (int j = n; j > 0; j--) {
+			input = input / 10;
+		}
+		sprintf(str, "%.*lf", n ,input);
+		size_t length = strlen(str);
+		b = m - length;
+		for (int x = 0; x < b; x++) {
+			printf("%c", chr);
+		}
+		printf("%.*lf\n",n, input);
+	}
+	return 0;
+}

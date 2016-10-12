@@ -1,0 +1,28 @@
+#include "stdio.h"
+
+
+int main()
+{
+	float money;
+	while (scanf("%f", &money) != EOF) {
+		if (money < 750) {
+			printf("%.2f\n", money * 1 / 100);
+		}
+		else if (money <= 2250) {
+			printf("%.2f\n", 7.5 + (money-750) * 2 / 100);
+		}
+		else if (money <= 3750) {
+			printf("%.2f\n", 37.5 + (money-2250) * 3 / 100);
+		}
+		else if (money <= 5250) {
+			printf("%.2f\n", 82.5 + (money-3750) * 4 / 100);
+		}
+		else if (money <= 7000) {
+			printf("%.2f\n", 142.5 + (money - 5250) * 5 / 100);
+		}
+		else {
+			printf("%.2f\n", 230 + (money - 7000) * 6 / 100);
+		}
+	}
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include "stdio.h"
+
+
+int main()
+{
+	int month, day, year;
+	while (scanf("%d/%d/%d", &month, &day, &year) != EOF) {
+		printf("%.4d",year);
+		printf("%.2d",month);
+		printf("%.2d",day);
+		printf("\n");
+	}
+	return 0;
+}

@@ -1,0 +1,15 @@
+#include "stdio.h"
+
+
+int main()
+{
+	long gp, gi, pc, in, cb;
+	while (scanf("%ld-%ld-%ld-%ld-%ld", &gp, &gi, &pc, &in, &cb) != EOF) {
+		printf("GS1 prefix: %ld\n", gp);
+		printf("Group identifier: %ld\n", gi);
+		printf("Publisher code: %ld\n", pc);
+		printf("Item number: %ld\n", in);
+		printf("Check bit: %ld\n", cb);
+	}
+    return 0;
+}

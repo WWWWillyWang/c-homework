@@ -1,0 +1,30 @@
+#include "stdio.h"
+
+
+int main()
+{
+	double ar[2] = { 0,0 };
+	double n;
+	double sw;
+	while (scanf("%lf", &n) != EOF) {
+		if (n > 0) {
+			ar[1] = n;
+			if (ar[0] < ar[1]) {
+				sw = ar[0];
+				ar[0] = ar[1];
+				ar[1] = sw;
+			}
+		}
+		else {
+			if (ar[0] == 0) {
+				printf("Nothing...\n");
+			}
+			else {
+				printf("%lf\n", ar[0]);
+			}
+			ar[1] = 0;
+			ar[0] = 0;
+		}
+	}
+    return 0;
+}

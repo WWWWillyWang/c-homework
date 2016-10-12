@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+
+int main()
+{
+	int input;
+	while(scanf("%d",&input)!=EOF){
+		printf("%10d\n",input);
+	}
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include "stdio.h"
+
+
+
+int main()
+{
+	double r;
+	double pi = 3.14159265358979323846;
+	while (scanf("%lf", &r) != EOF){
+		printf("%.6lf\n", r*r*r*pi * 4 / 3);
+	}
+
+    return 0;
+}
